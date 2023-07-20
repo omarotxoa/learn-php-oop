@@ -1,19 +1,13 @@
 <?php
 
 class Person {
-    private $first = "Omar";
-    private $last = "Ochoa";
-    private $age = "33";
+    // Properties
+    public $name;
+    public $eyeColor;
+    public $age;
 
-    public function owner() {
-        $a = $this->last;
-        return $a;
-    }
-}
-
-class Pet extends Person{
-    public function owner() {
-        $a = $this->first;
-        return $a;
+    // Methods
+    public function setName($name) {
+        $this->name = $name;
     }
 }
