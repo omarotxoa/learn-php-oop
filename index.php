@@ -1,5 +1,8 @@
 <?php 
 
-?>
+include_once 'inc/person.inc.php';
 
-<h1>Home</h1>
+$pet01 = new Person();
+echo $pet01->owner();
+
+?>
